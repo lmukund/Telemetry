@@ -1,0 +1,29 @@
+ul {
+  list-style-type: square;
+  list-style-position: outside;
+  list-style-image: none;
+}
+
+table, th, td {
+  border: 0.5px grey;
+  table-layout: auto;
+  width: 250px;
+  border-top-right-radius: 20px;
+  border-spacing: 5px;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+ .color_1 { background-color:#614700;
+color: white;
+margin-right: 2px;
+}
+ .color_2 { background-color:#db736b;
+color: white;
+margin-right: 2px;
+}
+ .color_3 { background-color:#95a13f;
+color: white;
+margin-right: 2px;
+}
