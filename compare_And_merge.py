@@ -118,9 +118,8 @@ def writeToDatabase(wtable,version):
 a = input("Enter name for first file eg for data_1.csv: ")
 b = input("Enter name for second file eg for data_2.csv: ")
 #%%
-path="C:/Users/Shashwat/Documents/intern/CSVs/"
-file1=path+a
-file2=path+b
+file1=a
+file2=b
 
 #%%
 table,dict_table=main(file1,file2)
