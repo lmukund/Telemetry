@@ -1,1 +1,9 @@
 This repository will contain the scripts for comparing telemetry attributes across versions
+
+1.	Convert any .avsc file to flattened csv file using avro_to_csv.py 
+2.	Filter and flatten data obtained from step 1 using flattened_csv.py
+3.	(Optional) To compare and merge two different data obtained from step use compare_And_merge.py 
+4.	To get HTML table for the data obtained from step 2 OR step 3 use make_html.py
+
+
+NOTE: WHILE USING LOCAL SPLUNK ENTERPRISE MAKE SURE THAT YOU HAVE CHANGE truncate=0 in props.conf & also create HTTP token collector for your splunk enterprise and set that token in avro_tocsv.py   
