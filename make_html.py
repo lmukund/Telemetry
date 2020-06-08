@@ -104,7 +104,7 @@ def makeHTMLtable(table,ver_map):
 	<link rel="stylesheet" href="style.css">	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<body><div class="jumbotron"> <h1>Color Scheme for version(s) :</h1> """+colorscheme+"""</div><table class="table table-bordered">"""
+<body><div class="jumbotron"> <h1> ISE Telemetry attributes </h1><h4>Color Scheme for version(s) :</h4> """+colorscheme+"""</div><table class="table table-bordered">"""
     for key in table:
         start="<tr><th>"+key+"</th><td><ul>"
         end="</ul></td></tr>"
