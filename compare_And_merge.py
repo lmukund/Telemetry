@@ -107,8 +107,8 @@ def main(file1,file2):
     table,dict_table=merge(table1,table2,fieldlist,fieldlist1,fieldlist2)
     return table,dict_table
 #%%
-def writeToDatabase(wtable,version):
-    with open(version+".csv", 'w') as csv_file:  
+def writeToDatabase(wtable,name):
+    with open(name, 'w') as csv_file:  
         writer = csv.writer(csv_file)
         writer.writerow(['field','value'])
         for key, value in wtable.items():
