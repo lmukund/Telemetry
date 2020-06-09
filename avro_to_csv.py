@@ -1,4 +1,3 @@
-
 #%%
 import splunklib.client as client
 import splunklib.results as results
@@ -66,21 +65,27 @@ def uploadData():
     f=open(file)
     j=json.load(f)
     log=j['fields']
-    main(log,'tmp')
+    hostid=input("Assign host_id : \n")
+    main(log,hostid)
     return
 #%%
 def getData():
     user=input("enter splunk username : \n ")
     passwd=input("enter splunk password : \n")
     hostname=input("enter hostname (for local splunk enterprise type localhost) : \n")
+    search_host=input("Enter host_id for search : \n")
+    search_host="\""+search_host+"\""
     print("WARNING !! if using local splunk enterprise then set truncate=0 in props.conf file \n")
     service = client.connect(
                         host=hostname,
                         port=8089,
                         username=user,
                         password=passwd)    
-    search_string = """ search host="tmp" |stats values as * by name  """    
-    job = service.jobs.create(search_string, **{"exec_mode": "blocking" ,"count": 0})
+    search_string = """ search host="""+search_host+ """|stats values as * by name  """
+    job = service.jobs.create(search_string, **{"latest_time": "now",
+                                                "earliest_time": "-5min",
+                                                "exec_mode": "blocking" ,
+                                                "count": 0})
     search_results = job.results(**{"output_mode": "csv"})
     res = search_results.read()
     first = True
@@ -97,10 +102,11 @@ def getData():
     df = df.replace('\r',' ',regex=True)
     df = df.replace('\t',' ',regex=True)
     wname=input("Enter file name to be saved (with exetension like output.csv) : ")
-    df.to_csv(wname, index=False)    
+    df.to_csv(wname, index=False)
     return
 #%%
 uploadData()
+print("Data Uploaded !!")
 getData()
 #%%
 
