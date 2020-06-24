@@ -1,0 +1,62 @@
+{% extends "layout.html" %} {% block content %}
+<div class="jumbotron">
+    <h1> ISE Telemetry Attributes </h1>
+    <a class="btn btn-outline-dark" href="{{ url_for('home') }}">Home</a>
+
+</div>
+<div class="content-section">
+    <div class="container">
+        <legend>
+            <h3 style="color:powderblue;">Edit Description </h3>
+        </legend>
+        <table class="table table-bordered">
+            <td>
+                <form method="POST" action="/edit">
+                    {{form.hidden_tag()}}
+                    <fieldset class="form-group">
+                        <div class="form-group">
+                            {{ form.access.label(class="form-control-label") }} {% if form.access.errors %} {{ form.access(class="form-control form-control-lg is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.access.errors %}
+                                <span>{{ error }}</span> {% endfor %}
+                            </div>
+                            {% else %} {{ form.access(class="form-control form-control-lg") }} {% endif %}
+                        </div>
+                        <div class="form-group">
+                            {{ form.information_block.label(class="form-control-label") }} {% if form.information_block.errors %} {{ form.information_block(class="form-control form-control-lg is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.information_block.errors %}
+                                <span>{{ error }}</span> {% endfor %}
+                            </div>
+                            {% else %} {{ form.information_block(class="form-control form-control-lg") }} {% endif %}
+                        </div>
+                        <div class="form-group">
+                            {{ form.attribute.label(class="form-control-label") }} {% if form.attribute.errors %} {{ form.attribute(class="form-control form-control-lg is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.attribute.errors %}
+                                <span>{{ error }}</span> {% endfor %}
+                            </div>
+                            {% else %} {{ form.attribute(class="form-control form-control-lg") }} {% endif %}
+                        </div>
+                        <div class="form-group">
+                            {{ form.description.label(class="form-control-label") }} {% if form.description.errors %} {{ form.description(class="form-control form-control-lg is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.description.errors %}
+                                <span>{{ error }}</span> {% endfor %}
+                            </div>
+                            {% else %} {{ form.description(class="form-control form-control-lg") }} {% endif %}
+                        </div>
+
+                        <div class="form-group">
+                            {{ form.submit(class="btn btn-outline-info") }}
+                        </div>
+                    </fieldset>
+                </form>
+            </td>
+        </table>
+    </div>
+</div>
+
+
+
+{% endblock content %}
