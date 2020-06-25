@@ -1,0 +1,365 @@
+Information Block,Attribute,ISE Version,Description
+DeploymentInfo,CiscoAccountID,2.7&3.O,Account ID provided by Cisco
+DeploymentInfo,DeploymentID,2.7&3.O,Deployment ID that is unique to a ISE installation
+DeploymentInfo,NodeList,2.7&3.O,Internal infrastructure attribute
+DeploymentInfo,xmlns,2.7,Internal infrastructure attribute
+DeploymentInfo,xmlns:ns2,2.7,Internal infrastructure attribute
+DeploymentInfo,xmlns:ns3,2.7,Internal infrastructure attribute
+DeploymentInfo,xmlns:ns4,2.7,Internal infrastructure attribute
+DeploymentInfo,xmlns:ns5,2.7,Internal infrastructure attribute
+DeploymentInfo,xmlns:ns6,2.7,Internal infrastructure attribute
+DeploymentInfo,CountInfo,2.7&3.O,Internal infrastructure attribute
+DeploymentInfo,MnTNodeCount,2.7&3.O,number of MNT nodes
+DeploymentInfo,Node,2.7&3.O,Internal infrastructure attribute
+DeploymentInfo,NodeCount,2.7&3.O,Number of Nodes of ISE (includes all types of nodes)
+DeploymentInfo,PAPNodeCount,2.7&3.O,number of PAP nodes
+DeploymentInfo,PDPNodeCount,2.7&3.O,number of PDP nodes
+DeploymentInfo,PICNodeCount,2.7&3.O,number of PIC nodes
+DeploymentInfo,PxGridNodeCount,2.7&3.O,number of PxGrid nodes
+DeploymentInfo,CurrentGuestUserCount,2.7&3.O,Current number of guest users
+DeploymentInfo,CurrentMDMEndPtCount,2.7&3.O,Current number of MDM endpoints
+DeploymentInfo,CurrentPostureEndptCount,2.7&3.O,Current number of posture endpoints
+DeploymentInfo,CurrentPxGridClientCount,2.7&3.O,Current number of pxgrid clients
+DeploymentInfo,fromDate,2.7&3.O,nan
+DeploymentInfo,toDate,2.7&3.O,nan
+DeploymentInfo,CountInfo_23,2.7&3.O,nan
+DeploymentInfo,Disk,2.7&3.O,nan
+DeploymentInfo,LastLoggedInAdminViaCLI,2.7&3.O,user logged in via CLI
+DeploymentInfo,LastLoggedInAdminViaCLITimestamp,2.7&3.O,timestamp of last login of admin via CLI
+DeploymentInfo,LoadAvg,2.7&3.O,nan
+DeploymentInfo,Memory,2.7&3.O,nan
+DeploymentInfo,Name,2.7&3.O,nan
+DeploymentInfo,NodeServiceType,2.7&3.O,nan
+DeploymentInfo,NodeTypes,2.7&3.O,Type of node
+DeploymentInfo,NumberOfCpuCores,2.7&3.O,number of cpu cores
+DeploymentInfo,PID,2.7&3.O,nan
+DeploymentInfo,PT,2.7&3.O,nan
+DeploymentInfo,PatchVersion,2.7&3.O,nan
+DeploymentInfo,PeakCpuUtilization,2.7&3.O,nan
+DeploymentInfo,PeakMemoryUtilization,2.7&3.O,nan
+DeploymentInfo,Profile,2.7&3.O,nan
+DeploymentInfo,ProfilerProbes,2.7&3.O,number of profiler probes
+DeploymentInfo,SN,2.7&3.O,Serial Number
+DeploymentInfo,Status,2.7&3.O,nan
+DeploymentInfo,Uptime,2.7&3.O,nan
+DeploymentInfo,VID,2.7&3.O,nan
+DeploymentInfo,VMDiskSpace,2.7&3.O,Amount of disk space on VM
+DeploymentInfo,Version,2.7&3.O,nan
+DeploymentInfo,telemetryEnabled,2.7&3.O,Is telemetry enabled
+DeploymentInfo,FileSystem,2.7&3.O,nan
+DeploymentInfo,Free,2.7&3.O,nan
+DeploymentInfo,LoadAvgFifteen,2.7&3.O,nan
+DeploymentInfo,LoadAvgFive,2.7&3.O,nan
+DeploymentInfo,LoadAvgOne,2.7&3.O,nan
+DeploymentInfo,Percent,2.7&3.O,nan
+DeploymentInfo,Total,2.7&3.O,nan
+DeploymentInfo,Available,2.7&3.O,nan
+DeploymentInfo,MountPoint,2.7&3.O,nan
+DeploymentInfo,Used,2.7&3.O,nan
+DeploymentInfo,FileSystem_8,2.7&3.O,nan
+DeploymentInfo,FileSystem_8R,2.7&3.O,nan
+DeploymentInfo,Disk_5,2.7&3.O,nan
+DeploymentInfo,LoadAvg_0,2.7&3.O,nan
+DeploymentInfo,Memory_57,2.7&3.O,nan
+DeploymentInfo,Node_3,2.7&3.O,nan
+DeploymentInfo,Node_3A,2.7&3.O,nan
+DeploymentInfo,NodeList_75,2.7&3.O,nan
+DeploymentInfo,DeploymentInfo_73,2.7&3.O,nan
+DeploymentInfo,DeploymentInfo_15,2.7&3.O,nan
+DeploymentInfo,FIPSStatus,3.O,nan
+DeploymentInfo,GuestAuthenticatedExternalIdSourceInfo,3.O,nan
+DeploymentInfo,ActiveDirectoryInfo,3.O,nan
+DeploymentInfo,CertificateAuthProfileInfo,3.O,nan
+DeploymentInfo,IdentityProviderInfo,3.O,nan
+DeploymentInfo,LdapInfo,3.O,nan
+DeploymentInfo,OdbcInfo,3.O,nan
+DeploymentInfo,RADIUSTokenInfo,3.O,nan
+DeploymentInfo,RSASecurIdInfo,3.O,nan
+DeploymentInfo,SocialLoginInfo,3.O,nan
+DeploymentInfo,AppId,3.O,nan
+DeploymentInfo,DomainName,3.O,nan
+DeploymentInfo,HostName,3.O,nan
+DeploymentInfo,IdentityFrom,3.O,nan
+DeploymentInfo,IdpProviderId,3.O,nan
+DeploymentInfo,PrimaryHostName,3.O,nan
+DeploymentInfo,SecurIdPath,3.O,nan
+DeploymentInfo,VMCpuLimit,3.O,nan
+DeploymentInfo,VMCpuReservation,3.O,nan
+DeploymentInfo,VMMemoryLimit,3.O,nan
+DeploymentInfo,VMMemoryReservation,3.O,nan
+DeploymentInfo,nan,3,nan
+DeploymentInfo,ActiveDirectoryInfo_58,3.O,nan
+DeploymentInfo,CertificateAuthProfileInfo_58,3.O,nan
+DeploymentInfo,IdentityProviderInfo_58,3.O,nan
+DeploymentInfo,LdapInfo_58,3.O,nan
+DeploymentInfo,OdbcInfo_58,3.O,nan
+DeploymentInfo,RADIUSTokenInfo_58,3.O,nan
+DeploymentInfo,RSASecurIdInfo_58,3.O,nan
+DeploymentInfo,SocialLoginInfo_58,3.O,nan
+DeploymentInfo,ActiveDirectoryInfo_58R,3.O,nan
+DeploymentInfo,CertificateAuthProfileInfo_58R,3.O,nan
+DeploymentInfo,IdentityProviderInfo_58R,3.O,nan
+DeploymentInfo,LdapInfo_58R,3.O,nan
+DeploymentInfo,OdbcInfo_58R,3.O,nan
+DeploymentInfo,RADIUSTokenInfo_58R,3.O,nan
+DeploymentInfo,RSASecurIdInfo_58R,3.O,nan
+DeploymentInfo,SocialLoginInfo_58R,3.O,nan
+DeploymentInfo,GuestAuthenticatedExternalIdSourceInfo_30,3.O,nan
+LicensesInfo,DeploymentID,2.7&3.O,nan
+LicensesInfo,NodeList,2.7&3.O,nan
+LicensesInfo,xmlns,2.7,nan
+LicensesInfo,xmlns:ns2,2.7,nan
+LicensesInfo,xmlns:ns3,2.7,nan
+LicensesInfo,xmlns:ns4,2.7,nan
+LicensesInfo,xmlns:ns5,2.7,nan
+LicensesInfo,xmlns:ns6,2.7,nan
+LicensesInfo,Node,2.7&3.O,nan
+LicensesInfo,Scope,2.7&3.O,nan
+LicensesInfo,License,2.7&3.O,nan
+LicensesInfo,PeakApexCount,2.7&3.O,nan
+LicensesInfo,PeakBaseCount,2.7&3.O,nan
+LicensesInfo,PeakPlusCount,2.7&3.O,nan
+LicensesInfo,SmartAccountName,2.7&3.O,nan
+LicensesInfo,TACACSConsumptionCount,2.7&3.O,nan
+LicensesInfo,TotalApexCount,2.7&3.O,nan
+LicensesInfo,TotalBaseCount,2.7&3.O,nan
+LicensesInfo,TotalPlusCount,2.7&3.O,nan
+LicensesInfo,VMLargeConsumptionCount,2.7&3.O,nan
+LicensesInfo,VMLargeLicenseCount,2.7&3.O,nan
+LicensesInfo,VMMediumConsumptionCount,2.7&3.O,nan
+LicensesInfo,VMMediumLicenseCount,2.7&3.O,nan
+LicensesInfo,VMSmallConsumptionCount,2.7&3.O,nan
+LicensesInfo,VMSmallLicenseCount,2.7&3.O,nan
+LicensesInfo,VirtualAccountName,2.7&3.O,nan
+LicensesInfo,deviceAdminCount,2.7&3.O,nan
+LicensesInfo,isAnyLicenseExpired,2.7&3.O,True' if any of license has expired
+LicensesInfo,isApexInstalled,2.7&3.O,nan
+LicensesInfo,isBaseInstalled,2.7&3.O,nan
+LicensesInfo,isEvaluationLic,2.7&3.O,nan
+LicensesInfo,isPlusInstalled,2.7&3.O,nan
+LicensesInfo,isWiredEnabled,2.7&3.O,nan
+LicensesInfo,Count,2.7&3.O,nan
+LicensesInfo,ExpiryDate,2.7&3.O,nan
+LicensesInfo,FileName,2.7&3.O,nan
+LicensesInfo,PrimaryUDI,2.7&3.O,nan
+LicensesInfo,RemainingDays,2.7&3.O,nan
+LicensesInfo,SecondaryUDI,2.7&3.O,nan
+LicensesInfo,ServiceTypes,2.7&3.O,nan
+LicensesInfo,Term,2.7&3.O,nan
+LicensesInfo,isEvaluation,2.7&3.O,nan
+LicensesInfo,isExpired,2.7&3.O,nan
+LicensesInfo,License_81,2.7&3.O,nan
+LicensesInfo,License_81R,2.7&3.O,nan
+LicensesInfo,Node_51,2.7&3.O,nan
+LicensesInfo,NodeList_66,2.7&3.O,nan
+LicensesInfo,LicensesInfo_32,2.7&3.O,nan
+LicensesInfo,LicensesInfo_10,2.7&3.O,nan
+LicensesInfo,nan,3,nan
+MDMInfo,DeploymentID,2.7&3.O,nan
+MDMInfo,NodeList,2.7&3.O,nan
+MDMInfo,Node,2.7&3.O,nan
+MDMInfo,Scope,2.7&3.O,update from browser
+MDMInfo,Servers,2.7&3.O,nan
+MDMInfo,HostName,2.7&3.O,nan
+MDMInfo,IPAddress,2.7&3.O,nan
+MDMInfo,Name,2.7&3.O,nan
+MDMInfo,Servers_8,2.7&3.O,nan
+MDMInfo,Servers_8R,2.7&3.O,nan
+MDMInfo,Node_5,2.7&3.O,nan
+MDMInfo,NodeList_21,2.7&3.O,nan
+MDMInfo,MDMInfo_21,2.7&3.O,nan
+MDMInfo,MDMInfo_26,2.7&3.O,nan
+MDMInfo,ActiveDesktopMdmServersCount,3.O,nan
+MDMInfo,ActiveMdmServersCount,3.O,nan
+MDMInfo,ActiveMobileMdmServersCount,3.O,nan
+MDMInfo,Compliant,3.O,nan
+MDMInfo,DesktopMdmServerCount,3.O,nan
+MDMInfo,NonCompliant,3.O,nan
+MDMInfo,DeviceIdentifierConfigurations,3.O,nan
+MDMInfo,ImportedBaselinesCount,3.O,nan
+MDMInfo,SelectedBaselinesCount,3.O,nan
+MDMInfo,ServerType,3.O,nan
+MDMInfo,VendorApiVersion,3.O,nan
+MDMInfo,VendorName,3.O,nan
+MDMInfo,VendorProductName,3.O,nan
+MDMInfo,VendorProductVersion,3.O,nan
+MDMInfo,nan,3,nan
+NADInfo,DeploymentID,2.7&3.O,nan
+NADInfo,NodeList,2.7&3.O,nan
+NADInfo,xmlns,2.7,nan
+NADInfo,xmlns:ns2,2.7,nan
+NADInfo,xmlns:ns3,2.7,nan
+NADInfo,xmlns:ns4,2.7,nan
+NADInfo,xmlns:ns5,2.7,nan
+NADInfo,xmlns:ns6,2.7,nan
+NADInfo,Node,2.7&3.O,nan
+NADInfo,Scope,2.7&3.O,nan
+NADInfo,NAD,2.7&3.O,nan
+NADInfo,NADProfileInfo,2.7&3.O,nan
+NADInfo,Description,2.7&3.O,nan
+NADInfo,Id,2.7&3.O,nan
+NADInfo,ModelName,2.7&3.O,nan
+NADInfo,Name,2.7&3.O,nan
+NADInfo,ProfileID,2.7&3.O,nan
+NADInfo,ProfileName,2.7&3.O,nan
+NADInfo,SwVersion,2.7&3.O,nan
+NADInfo,isCiscoProvided,2.7&3.O,is it a cisco product
+NADInfo,isDefProfile,2.7&3.O,nan
+NADInfo,isRadiusSupported,2.7&3.O,is radius supported on this switch/router
+NADInfo,isTacacsSupported,2.7&3.O,Is tacacs supported on the NAD (access switch/router)
+NADInfo,isTrustSecSupported,2.7&3.O,is CTS supported on this switch/router
+NADInfo,NADProfileInfo_58,2.7&3.O,nan
+NADInfo,NAD_12,2.7&3.O,nan
+NADInfo,NADProfileInfo_58R,2.7&3.O,nan
+NADInfo,NAD_13,2.7&3.O,nan
+NADInfo,Node_30,2.7&3.O,nan
+NADInfo,NodeList_44,2.7&3.O,nan
+NADInfo,NADInfo_29,2.7&3.O,nan
+NADInfo,NADInfo_20,2.7&3.O,nan
+NADInfo,NADCountInfo,3.O,nan
+NADInfo,ActiveNADCount,3.O,nan
+NADInfo,nan,3,nan
+NADInfo,TotalActiveNADCount,3.O,nan
+NADInfo,NADCountInfo_58,3.O,nan
+NADInfo,NADCountInfo_58R,3.O,nan
+NetworkAccessInfo,DeploymentID,2.7&3.O,Deployment ID
+NetworkAccessInfo,NodeList,2.7&3.O,nan
+NetworkAccessInfo,xmlns,2.7,nan
+NetworkAccessInfo,xmlns:ns2,2.7,nan
+NetworkAccessInfo,xmlns:ns3,2.7,nan
+NetworkAccessInfo,xmlns:ns4,2.7,nan
+NetworkAccessInfo,xmlns:ns5,2.7,nan
+NetworkAccessInfo,xmlns:ns6,2.7,nan
+NetworkAccessInfo,Node,2.7&3.O,nan
+NetworkAccessInfo,Scope,2.7&3.O,nan
+NetworkAccessInfo,ADInfo,2.7&3.O,nan
+NetworkAccessInfo,AuthenticationInfo,2.7&3.O,nan
+NetworkAccessInfo,AuthorizationInfo,2.7&3.O,nan
+NetworkAccessInfo,LDAPInfo,2.7&3.O,nan
+NetworkAccessInfo,NDGInfo,2.7&3.O,nan
+NetworkAccessInfo,ADAuthStoreCount,2.7&3.O,number of AD AUTH stores
+NetworkAccessInfo,ActiveVLANCount,2.7&3.O,number of active vlans
+NetworkAccessInfo,ActivedACLCount,2.7&3.O,number of active ACLs
+NetworkAccessInfo,LDAPIDStoreCount,2.7&3.O,number of LDAP ID stores
+NetworkAccessInfo,LocalIdentityNonAdminUserCount,2.7&3.O,nan
+NetworkAccessInfo,ODBCCount,2.7&3.O,number of ODBCs
+NetworkAccessInfo,PolicyLineCount,2.7&3.O,nan
+NetworkAccessInfo,RADIUSIDStoreCount,2.7&3.O,nan
+NetworkAccessInfo,RSAIDStoreCount,2.7&3.O,number of RSA IS stores
+NetworkAccessInfo,AuthenticationInfo_30,2.7&3.O,nan
+NetworkAccessInfo,AuthorizationInfo_20,2.7&3.O,nan
+NetworkAccessInfo,ADName,2.7&3.O,nan
+NetworkAccessInfo,LDAPName,2.7&3.O,nan
+NetworkAccessInfo,NDGHeierarchyNADMap,2.7&3.O,nan
+NetworkAccessInfo,NDGHierarchyMap,2.7&3.O,nan
+NetworkAccessInfo,SelectedAttrCount,2.7&3.O,nan
+NetworkAccessInfo,SelectedAuthDomainCount,2.7&3.O,nan
+NetworkAccessInfo,SelectedGroupCount,2.7&3.O,nan
+NetworkAccessInfo,ADInfo_01,2.7&3.O,nan
+NetworkAccessInfo,LDAPInfo_01,2.7&3.O,nan
+NetworkAccessInfo,NDGInfo_01,2.7&3.O,nan
+NetworkAccessInfo,ADInfo_01R,2.7&3.O,nan
+NetworkAccessInfo,LDAPInfo_01R,2.7&3.O,nan
+NetworkAccessInfo,NDGInfo_01R,2.7&3.O,nan
+NetworkAccessInfo,Node_90,2.7&3.O,nan
+NetworkAccessInfo,NodeList_51,2.7&3.O,nan
+NetworkAccessInfo,NetworkAccessInfo_21,2.7&3.O,nan
+NetworkAccessInfo,NetworkAccessInfo_26,2.7&3.O,nan
+NetworkAccessInfo,SdaVNs,3.O,nan
+NetworkAccessInfo,Name,3.O,nan
+NetworkAccessInfo,OdbcInfo,3.O,nan
+NetworkAccessInfo,ODBCType,3.O,nan
+NetworkAccessInfo,InputParameterName,3.O,nan
+NetworkAccessInfo,InputParametersCount,3.O,nan
+NetworkAccessInfo,value,3.O,nan
+NetworkAccessInfo,InputParameterName_78,3.O,nan
+NetworkAccessInfo,nan,3,nan
+NetworkAccessInfo,InputParameterName_78R,3.O,nan
+NetworkAccessInfo,ODBCType_77,3.O,nan
+NetworkAccessInfo,ODBCType_77R,3.O,nan
+NetworkAccessInfo,OdbcInfo_28,3.O,nan
+NetworkAccessInfo,SdaVNs_58,3.O,nan
+NetworkAccessInfo,SdaVNs_58R,3.O,nan
+PeakCountsInfo,PeakCount,2.7&3.O,nan
+PeakCountsInfo,attribute,2.7&3.O,nan
+PeakCountsInfo,value,2.7&3.O,nan
+PeakCountsInfo,PeakCount_58,2.7&3.O,nan
+PeakCountsInfo,PeakCount_58R,2.7&3.O,nan
+PeakCountsInfo,PeakCountsInfo_30,2.7&3.O,nan
+PeakCountsInfo,PeakCountsInfo_44,2.7&3.O,nan
+PeakCountsInfo,nan,3,nan
+PostureInfo,ActivePoliciesCount,2.7&3.O,number of active policies
+PostureInfo,InActivePoliciesCount,2.7&3.O,number of inactive policies
+PostureInfo,LastPostureFeedUpdateTimeStamp,2.7&3.O,timestamp of last posture update
+PostureInfo,PostureInfo_21,2.7&3.O,nan
+PostureInfo,PostureInfo_26,2.7&3.O,nan
+PostureInfo,PostureFeedUpdateMode,3.O,nan
+ProfilerInfo,DeploymentID,2.7&3.O,nan
+ProfilerInfo,NodeList,2.7&3.O,nan
+ProfilerInfo,xmlns,2.7,nan
+ProfilerInfo,Node,2.7&3.O,nan
+ProfilerInfo,LastAppliedFeedDateTime,2.7&3.O,nan
+ProfilerInfo,OnlineSubscriptionEnabled,2.7&3.O,nan
+ProfilerInfo,Profiles,2.7&3.O,nan
+ProfilerInfo,Scope,2.7&3.O,nan
+ProfilerInfo,CustomProfilesCount,2.7&3.O,number of custom profiles
+ProfilerInfo,EndpointTypes,2.7&3.O,number of endpoint types
+ProfilerInfo,Profile,2.7&3.O,nan
+ProfilerInfo,TotalEndpointsCount,2.7&3.O,number of total endpoints
+ProfilerInfo,TotalProfilesCount,2.7&3.O,number of profiles
+ProfilerInfo,UniqueEndpointsCount,2.7&3.O,number of unique end points
+ProfilerInfo,UnknownEndpointsCount,2.7&3.O,number of unknown endpoints (no profiled/classified)
+ProfilerInfo,UnknownEndpointsPercentage,2.7&3.O,percentage of unknown endpoints with respect to total endpoints
+ProfilerInfo,EndpointCount,2.7&3.O,nan
+ProfilerInfo,Name,2.7&3.O,nan
+ProfilerInfo,custom,2.7&3.O,nan
+ProfilerInfo,Profile_01,2.7&3.O,nan
+ProfilerInfo,Profile_01R,2.7&3.O,nan
+ProfilerInfo,Profiles_29,2.7&3.O,nan
+ProfilerInfo,Node_73,2.7&3.O,nan
+ProfilerInfo,NodeList_46,2.7&3.O,nan
+ProfilerInfo,ProfilerInfo_36,2.7&3.O,nan
+ProfilerInfo,ProfilerInfo_15,2.7&3.O,nan
+ProfilerInfo,nan,3,nan
+recordType,nan,nan,nan
+recordVersion,nan,nan,nan
+recordedAt,nan,nan,nan
+HTTPTrustsecInfo,AvgSuccessRate,3.O,nan
+HTTPTrustsecInfo,AvgTimeTakenInMs,3.O,nan
+HTTPTrustsecInfo,Propagations,3.O,nan
+HTTPTrustsecInfo,Propagation,3.O,nan
+HTTPTrustsecInfo,COAs,3.O,nan
+HTTPTrustsecInfo,EndTime,3.O,nan
+HTTPTrustsecInfo,PropagationId,3.O,nan
+HTTPTrustsecInfo,StartTime,3.O,nan
+HTTPTrustsecInfo,SuccessRatePercentage,3.O,nan
+HTTPTrustsecInfo,TimeTakenInMs,3.O,nan
+HTTPTrustsecInfo,Push,3.O,nan
+HTTPTrustsecInfo,NumOfFailedNads,3.O,nan
+HTTPTrustsecInfo,NumOfNads,3.O,nan
+HTTPTrustsecInfo,NumOfSucceededNads,3.O,nan
+HTTPTrustsecInfo,PushId,3.O,nan
+HTTPTrustsecInfo,Push_8,3.O,nan
+HTTPTrustsecInfo,nan,3,nan
+HTTPTrustsecInfo,Push_8R,3.O,nan
+HTTPTrustsecInfo,COAs_5,3.O,nan
+HTTPTrustsecInfo,Propagation_8,3.O,nan
+HTTPTrustsecInfo,Propagation_8R,3.O,nan
+HTTPTrustsecInfo,Propagations_5,3.O,nan
+HTTPTrustsecInfo,HTTPTrustsecInfo_21,3.O,nan
+HTTPTrustsecInfo,HTTPTrustsecInfo_26,3.O,nan
+UpgradePreChecksInfo,UpgradePreChecksReports,3.O,nan
+UpgradePreChecksInfo,PrecheckRpt,3.O,nan
+UpgradePreChecksInfo,PrecheckName,3.O,nan
+UpgradePreChecksInfo,Nodes,3.O,nan
+UpgradePreChecksInfo,value,3.O,nan
+UpgradePreChecksInfo,NodeName,3.O,nan
+UpgradePreChecksInfo,NodeStatus,3.O,nan
+UpgradePreChecksInfo,Nodes_78,3.O,nan
+UpgradePreChecksInfo,Nodes_78R,3.O,nan
+UpgradePreChecksInfo,PrecheckName_21,3.O,nan
+UpgradePreChecksInfo,PrecheckName_21R,3.O,nan
+UpgradePreChecksInfo,PrecheckRpt_12,3.O,nan
+UpgradePreChecksInfo,PrecheckRpt_12R,3.O,nan
+UpgradePreChecksInfo,UpgradePreChecksReports_31,3.O,nan
+UpgradePreChecksInfo,UpgradePreChecksInfo_62,3.O,nan
