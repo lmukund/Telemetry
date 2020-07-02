@@ -1,5 +1,9 @@
         INSTRUCTIONS
+
+
 Read other attached instruction files for detailed explaination
+
+
 For Static
 1.	avro_to_csv.py converts avro (.avsc) file to a csv file containing all the raw data . It uses **splunk-enterprise local version so make sure to edit and add your credentials .
 2.	flatten_csv.py takes input from the step 1 ,i.e. raw data csv and process it and flattens it . It also asks for version so please specify and also if you want version to be “3.0” then enter capital o not zero like “3.O” not “3.0” and save it with appropriate name
