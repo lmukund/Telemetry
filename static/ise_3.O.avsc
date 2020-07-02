@@ -1,0 +1,2219 @@
+{
+  "namespace": "com.cisco.cpm.infra.sse",
+  "name": "telemetry",
+  "type": "record",
+  "fields": [
+    {
+      "name": "recordedAt",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
+    },
+    {
+      "name": "recordType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "recordVersion",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "DeploymentInfo",
+      "type": [
+        "null",
+        "string",
+        {
+          "type": "record",
+          "name": "DeploymentInfo_15",
+          "fields": [
+            {
+              "name": "DeploymentInfo",
+              "type": [
+                "null",
+                "string",
+                {
+                  "type": "record",
+                  "name": "DeploymentInfo_73",
+                  "fields": [
+                    {
+                      "name": "DeploymentID",
+                      "type": "string"
+                    },
+                    {
+                      "name": "CiscoAccountID",
+                      "type": [
+                        "null",
+                        "string",
+                        "int"
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "FIPSStatus",
+                      "type": [
+                        "null",
+                        "string"
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "NodeList",
+                      "type": [
+                        "null",
+                        {
+                          "type": "record",
+                          "name": "NodeList_75",
+                          "fields": [
+                            {
+                              "name": "CountInfo",
+                              "type": {
+                                "type": "record",
+                                "name": "CountInfo_23",
+                                "fields": [
+                                  {
+                                    "name": "CurrentGuestUserCount",
+                                    "type": "int"
+                                  },
+                                  {
+                                    "name": "CurrentMDMEndPtCount",
+                                    "type": "int"
+                                  },
+                                  {
+                                    "name": "CurrentPostureEndptCount",
+                                    "type": "int"
+                                  },
+                                  {
+                                    "name": "CurrentPxGridClientCount",
+                                    "type": "int"
+                                  },
+                                  {
+                                    "name": "fromDate",
+                                    "type": [
+                                      "null",
+                                      "string"
+                                    ],
+                                    "default": null
+                                  },
+                                  {
+                                    "name": "toDate",
+                                    "type": [
+                                      "null",
+                                      "string"
+                                    ],
+                                    "default": null
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "name": "MnTNodeCount",
+                              "type": "int"
+                            },
+                            {
+                              "name": "Node",
+                              "type": [
+                                "null",
+                                {
+                                  "type": "record",
+                                  "name": "Node_3",
+                                  "fields": [
+                                    {
+                                      "name": "Disk",
+                                      "type": [
+                                        "null",
+                                        {
+                                          "type": "record",
+                                          "name": "Disk_5",
+                                          "fields": [
+                                            {
+                                              "name": "FileSystem",
+                                              "type": [
+                                                "null",
+                                                {
+                                                  "type": "record",
+                                                  "name": "FileSystem_8",
+                                                  "fields": [
+                                                    {
+                                                      "name": "Available",
+                                                      "type": "double"
+                                                    },
+                                                    {
+                                                      "name": "MountPoint",
+                                                      "type": "string"
+                                                    },
+                                                    {
+                                                      "name": "Name",
+                                                      "type": "string"
+                                                    },
+                                                    {
+                                                      "name": "Percent",
+                                                      "type": "string"
+                                                    },
+                                                    {
+                                                      "name": "Total",
+                                                      "type": "double"
+                                                    },
+                                                    {
+                                                      "name": "Used",
+                                                      "type": "double"
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "name": "FileSystem_8R",
+                                                  "type": "array",
+                                                  "items": [
+                                                    "null",
+                                                    "FileSystem_8"
+                                                  ]
+                                                }
+                                              ],
+                                              "default": null
+                                            },
+                                            {
+                                              "name": "fromDate",
+                                              "type": "string"
+                                            },
+                                            {
+                                              "name": "toDate",
+                                              "type": "string"
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "default": null
+                                    },
+                                    {
+                                      "name": "LoadAvg",
+                                      "type": [
+                                        "null",
+                                        {
+                                          "type": "record",
+                                          "name": "LoadAvg_0",
+                                          "fields": [
+                                            {
+                                              "name": "LoadAvgFifteen",
+                                              "type": "double"
+                                            },
+                                            {
+                                              "name": "LoadAvgFive",
+                                              "type": "double"
+                                            },
+                                            {
+                                              "name": "LoadAvgOne",
+                                              "type": "double"
+                                            },
+                                            {
+                                              "name": "fromDate",
+                                              "type": "string"
+                                            },
+                                            {
+                                              "name": "toDate",
+                                              "type": "string"
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "default": null
+                                    },
+                                    {
+                                      "name": "Memory",
+                                      "type": [
+                                        "null",
+                                        {
+                                          "type": "record",
+                                          "name": "Memory_57",
+                                          "fields": [
+                                            {
+                                              "name": "Free",
+                                              "type": "double"
+                                            },
+                                            {
+                                              "name": "Percent",
+                                              "type": "double"
+                                            },
+                                            {
+                                              "name": "Total",
+                                              "type": "double"
+                                            },
+                                            {
+                                              "name": "fromDate",
+                                              "type": "string"
+                                            },
+                                            {
+                                              "name": "toDate",
+                                              "type": "string"
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "default": null
+                                    },
+                                    {
+                                      "name": "Name",
+                                      "type": "string"
+                                    },
+                                    {
+                                      "name": "NodeServiceType",
+                                      "type": "string"
+                                    },
+                                    {
+                                      "name": "NodeTypes",
+                                      "type": "string"
+                                    },
+                                    {
+                                      "name": "NumberOfCpuCores",
+                                      "type": "int"
+                                    },
+                                    {
+                                      "name": "LastLoggedInAdminViaCLI",
+                                      "type": [
+                                        "null",
+                                        "string"
+                                      ],
+                                      "default": null
+                                    },
+                                    {
+                                      "name": "LastLoggedInAdminViaCLITimestamp",
+                                      "type": [
+                                        "null",
+                                        "string"
+                                      ],
+                                      "default": null
+                                    },
+                                    {
+                                      "name": "ProfilerProbes",
+                                      "type": "string"
+                                    },
+                                    {
+                                      "name": "telemetryEnabled",
+                                      "type": "boolean"
+                                    },
+                                    {
+                                      "name": "Uptime",
+                                      "type": "string"
+                                    },
+                                    {
+                                      "name": "PeakCpuUtilization",
+                                      "type": [
+                                        "null",
+                                        "float"
+                                      ],
+                                      "default": null
+                                    },
+                                    {
+                                      "name": "PeakMemoryUtilization",
+                                      "type": [
+                                        "null",
+                                        "float"
+                                      ],
+                                      "default": null
+                                    },
+                                    {
+                                      "name": "Profile",
+                                      "type": "string"
+                                    },
+                                    {
+                                      "name": "VMDiskSpace",
+                                      "type": "string"
+                                    },
+                                    {
+                                      "name": "PID",
+                                      "type": "string"
+                                    },
+                                    {
+                                      "name": "PT",
+                                      "type": "string"
+                                    },
+                                    {
+                                      "name": "Status",
+                                      "type": "string"
+                                    },
+                                    {
+                                      "name": "VID",
+                                      "type": "string"
+                                    },
+                                    {
+                                      "name": "Version",
+                                      "type": "string"
+                                    },
+                                    {
+                                      "name": "PatchVersion",
+                                      "type": [
+                                        "null",
+                                        "int",
+                                        "string"
+                                      ],
+                                      "default": null
+                                    },
+                                    {
+                                      "name": "SN",
+                                      "type": [
+                                        "null",
+                                        "string"
+                                      ],
+                                      "default": null
+                                    },
+                                    {
+                                      "name": "VMMemoryReservation",
+                                      "type": [
+                                        "null",
+                                        "string"
+                                      ],
+                                      "default": null
+                                    },
+                                    {
+                                      "name": "VMCpuReservation",
+                                      "type": [
+                                        "null",
+                                        "string"
+                                      ],
+                                      "default": null
+                                    },
+                                    {
+                                      "name": "VMMemoryLimit",
+                                      "type": [
+                                        "null",
+                                        "string"
+                                      ],
+                                      "default": null
+                                    },
+                                    {
+                                      "name": "VMCpuLimit",
+                                      "type": [
+                                        "null",
+                                        "string"
+                                      ],
+                                      "default": null
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "Node_3A",
+                                  "type": "array",
+                                  "items": [
+                                    "null",
+                                    "Node_3"
+                                  ]
+                                }
+                              ],
+                              "default": null
+                            },
+                            {
+                              "name": "NodeCount",
+                              "type": "int"
+                            },
+                            {
+                              "name": "PAPNodeCount",
+                              "type": "int"
+                            },
+                            {
+                              "name": "PDPNodeCount",
+                              "type": "int"
+                            },
+                            {
+                              "name": "PICNodeCount",
+                              "type": "int"
+                            },
+                            {
+                              "name": "PxGridNodeCount",
+                              "type": "int"
+                            }
+                          ]
+                        }
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "GuestAuthenticatedExternalIdSourceInfo",
+                      "type": [
+                        "null",
+                        "string",
+                        {
+                          "type": "record",
+                          "name": "GuestAuthenticatedExternalIdSourceInfo_30",
+                          "fields": [
+                            {
+                              "name": "ActiveDirectoryInfo",
+                              "type": [
+                                "null",
+                                {
+                                  "type": "record",
+                                  "name": "ActiveDirectoryInfo_58",
+                                  "fields": [
+                                    {
+                                      "name": "DomainName",
+                                      "type": "string"
+                                    },
+                                    {
+                                      "name": "Name",
+                                      "type": "string"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "ActiveDirectoryInfo_58R",
+                                  "type": "array",
+                                  "items": [
+                                    "null",
+                                    "ActiveDirectoryInfo_58"
+                                  ]
+                                }
+                              ],
+                              "default": null
+                            },
+                            {
+                              "name": "CertificateAuthProfileInfo",
+                              "type": [
+                                "null",
+                                {
+                                  "type": "record",
+                                  "name": "CertificateAuthProfileInfo_58",
+                                  "fields": [
+                                    {
+                                      "name": "IdentityFrom",
+                                      "type": "string"
+                                    },
+                                    {
+                                      "name": "Name",
+                                      "type": "string"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "CertificateAuthProfileInfo_58R",
+                                  "type": "array",
+                                  "items": [
+                                    "null",
+                                    "CertificateAuthProfileInfo_58"
+                                  ]
+                                }
+                              ],
+                              "default": null
+                            },
+                            {
+                              "name": "OdbcInfo",
+                              "type": [
+                                "null",
+                                {
+                                  "type": "record",
+                                  "name": "OdbcInfo_58",
+                                  "fields": [
+                                    {
+                                      "name": "HostName",
+                                      "type": "string"
+                                    },
+                                    {
+                                      "name": "Name",
+                                      "type": "string"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "OdbcInfo_58R",
+                                  "type": "array",
+                                  "items": [
+                                    "null",
+                                    "OdbcInfo_58"
+                                  ]
+                                }
+                              ],
+                              "default": null
+                            },
+                            {
+                              "name": "RADIUSTokenInfo",
+                              "type": [
+                                "null",
+                                {
+                                  "type": "record",
+                                  "name": "RADIUSTokenInfo_58",
+                                  "fields": [
+                                    {
+                                      "name": "PrimaryHostName",
+                                      "type": "string"
+                                    },
+                                    {
+                                      "name": "Name",
+                                      "type": "string"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "RADIUSTokenInfo_58R",
+                                  "type": "array",
+                                  "items": [
+                                    "null",
+                                    "RADIUSTokenInfo_58"
+                                  ]
+                                }
+                              ],
+                              "default": null
+                            },
+                            {
+                              "name": "IdentityProviderInfo",
+                              "type": [
+                                "null",
+                                {
+                                  "type": "record",
+                                  "name": "IdentityProviderInfo_58",
+                                  "fields": [
+                                    {
+                                      "name": "IdpProviderId",
+                                      "type": "string"
+                                    },
+                                    {
+                                      "name": "Name",
+                                      "type": "string"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "IdentityProviderInfo_58R",
+                                  "type": "array",
+                                  "items": [
+                                    "null",
+                                    "IdentityProviderInfo_58"
+                                  ]
+                                }
+                              ],
+                              "default": null
+                            },
+                            {
+                              "name": "LdapInfo",
+                              "type": [
+                                "null",
+                                {
+                                  "type": "record",
+                                  "name": "LdapInfo_58",
+                                  "fields": [
+                                    {
+                                      "name": "PrimaryHostName",
+                                      "type": "string"
+                                    },
+                                    {
+                                      "name": "Name",
+                                      "type": "string"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "LdapInfo_58R",
+                                  "type": "array",
+                                  "items": [
+                                    "null",
+                                    "LdapInfo_58"
+                                  ]
+                                }
+                              ],
+                              "default": null
+                            },
+                            {
+                              "name": "RSASecurIdInfo",
+                              "type": [
+                                "null",
+                                {
+                                  "type": "record",
+                                  "name": "RSASecurIdInfo_58",
+                                  "fields": [
+                                    {
+                                      "name": "SecurIdPath",
+                                      "type": "string"
+                                    },
+                                    {
+                                      "name": "Name",
+                                      "type": "string"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "RSASecurIdInfo_58R",
+                                  "type": "array",
+                                  "items": [
+                                    "null",
+                                    "RSASecurIdInfo_58"
+                                  ]
+                                }
+                              ],
+                              "default": null
+                            },
+                            {
+                              "name": "SocialLoginInfo",
+                              "type": [
+                                "null",
+                                {
+                                  "type": "record",
+                                  "name": "SocialLoginInfo_58",
+                                  "fields": [
+                                    {
+                                      "name": "AppId",
+                                      "type": "string"
+                                    },
+                                    {
+                                      "name": "Name",
+                                      "type": "string"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "SocialLoginInfo_58R",
+                                  "type": "array",
+                                  "items": [
+                                    "null",
+                                    "SocialLoginInfo_58"
+                                  ]
+                                }
+                              ],
+                              "default": null
+                            }
+                          ]
+                        }
+                      ],
+                      "default": null
+                    }
+                  ]
+                }
+              ],
+              "default": null
+            }
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "LicensesInfo",
+      "type": [
+        "null",
+        "string",
+        {
+          "type": "record",
+          "name": "LicensesInfo_10",
+          "fields": [
+            {
+              "name": "LicensesInfo",
+              "type": [
+                "null",
+                "string",
+                {
+                  "type": "record",
+                  "name": "LicensesInfo_32",
+                  "fields": [
+                    {
+                      "name": "DeploymentID",
+                      "type": "string"
+                    },
+                    {
+                      "name": "NodeList",
+                      "type": [
+                        "null",
+                        "string",
+                        {
+                          "type": "record",
+                          "name": "NodeList_66",
+                          "fields": [
+                            {
+                              "name": "Node",
+                              "type": {
+                                "type": "record",
+                                "name": "Node_51",
+                                "fields": [
+                                  {
+                                    "name": "License",
+                                    "type": [
+                                      "null",
+                                      {
+                                        "type": "record",
+                                        "name": "License_81",
+                                        "fields": [
+                                          {
+                                            "name": "Count",
+                                            "type": [
+                                              "null",
+                                              "int"
+                                            ],
+                                            "default": null
+                                          },
+                                          {
+                                            "name": "ExpiryDate",
+                                            "type": [
+                                              "null",
+                                              "string"
+                                            ],
+                                            "default": null
+                                          },
+                                          {
+                                            "name": "FileName",
+                                            "type": [
+                                              "null",
+                                              "string"
+                                            ],
+                                            "default": null
+                                          },
+                                          {
+                                            "name": "PrimaryUDI",
+                                            "type": [
+                                              "null",
+                                              "string"
+                                            ],
+                                            "default": null
+                                          },
+                                          {
+                                            "name": "RemainingDays",
+                                            "type": [
+                                              "null",
+                                              "int"
+                                            ],
+                                            "default": null
+                                          },
+                                          {
+                                            "name": "SecondaryUDI",
+                                            "type": [
+                                              "null",
+                                              "string"
+                                            ],
+                                            "default": null
+                                          },
+                                          {
+                                            "name": "ServiceTypes",
+                                            "type": [
+                                              "null",
+                                              "string"
+                                            ],
+                                            "default": null
+                                          },
+                                          {
+                                            "name": "Term",
+                                            "type": [
+                                              "null",
+                                              "int"
+                                            ],
+                                            "default": null
+                                          },
+                                          {
+                                            "name": "isEvaluation",
+                                            "type": [
+                                              "null",
+                                              "boolean"
+                                            ],
+                                            "default": null
+                                          },
+                                          {
+                                            "name": "isExpired",
+                                            "type": [
+                                              "null",
+                                              "boolean"
+                                            ],
+                                            "default": null
+                                          },
+                                          {
+                                            "name": "isWiredEnabled",
+                                            "type": [
+                                              "null",
+                                              "boolean"
+                                            ],
+                                            "default": null
+                                          }
+                                        ],
+                                        "default": null
+                                      },
+                                      {
+                                        "name": "License_81R",
+                                        "type": "array",
+                                        "items": [
+                                          "null",
+                                          "License_81"
+                                        ]
+                                      }
+                                    ],
+                                    "default": null
+                                  },
+                                  {
+                                    "name": "TotalApexCount",
+                                    "type": "int"
+                                  },
+                                  {
+                                    "name": "TotalBaseCount",
+                                    "type": "int"
+                                  },
+                                  {
+                                    "name": "TotalPlusCount",
+                                    "type": "int"
+                                  },
+                                  {
+                                    "name": "isAnyLicenseExpired",
+                                    "type": "boolean"
+                                  },
+                                  {
+                                    "name": "deviceAdminCount",
+                                    "type": "int"
+                                  },
+                                  {
+                                    "name": "PeakApexCount",
+                                    "type": "int"
+                                  },
+                                  {
+                                    "name": "PeakBaseCount",
+                                    "type": "int"
+                                  },
+                                  {
+                                    "name": "SmartAccountName",
+                                    "type": "string"
+                                  },
+                                  {
+                                    "name": "VirtualAccountName",
+                                    "type": "string"
+                                  },
+                                  {
+                                    "name": "PeakPlusCount",
+                                    "type": "int"
+                                  },
+                                  {
+                                    "name": "TACACSConsumptionCount",
+                                    "type": "int"
+                                  },
+                                  {
+                                    "name": "VMLargeConsumptionCount",
+                                    "type": "int"
+                                  },
+                                  {
+                                    "name": "VMLargeLicenseCount",
+                                    "type": "int"
+                                  },
+                                  {
+                                    "name": "VMMediumConsumptionCount",
+                                    "type": "int"
+                                  },
+                                  {
+                                    "name": "VMMediumLicenseCount",
+                                    "type": "int"
+                                  },
+                                  {
+                                    "name": "VMSmallConsumptionCount",
+                                    "type": "int"
+                                  },
+                                  {
+                                    "name": "VMSmallLicenseCount",
+                                    "type": "int"
+                                  },
+                                  {
+                                    "name": "isApexInstalled",
+                                    "type": "boolean"
+                                  },
+                                  {
+                                    "name": "isBaseInstalled",
+                                    "type": "boolean"
+                                  },
+                                  {
+                                    "name": "isEvaluationLic",
+                                    "type": "boolean"
+                                  },
+                                  {
+                                    "name": "isPlusInstalled",
+                                    "type": "boolean"
+                                  },
+                                  {
+                                    "name": "isWiredEnabled",
+                                    "type": "boolean"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "name": "Scope",
+                              "type": "string"
+                            }
+                          ]
+                        }
+                      ],
+                      "default": null
+                    }
+                  ]
+                }
+              ],
+              "default": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "NADInfo",
+      "type": [
+        "null",
+        "string",
+        {
+          "type": "record",
+          "name": "NADInfo_20",
+          "fields": [
+            {
+              "name": "NADInfo",
+              "type": [
+                "null",
+                "string",
+                {
+                  "type": "record",
+                  "name": "NADInfo_29",
+                  "fields": [
+                    {
+                      "name": "DeploymentID",
+                      "type": "string"
+                    },
+                    {
+                      "name": "NodeList",
+                      "type": {
+                        "type": "record",
+                        "name": "NodeList_44",
+                        "fields": [
+                          {
+                            "name": "Node",
+                            "type": {
+                              "type": "record",
+                              "name": "Node_30",
+                              "fields": [
+                                {
+                                  "name": "NAD",
+                                  "type": [
+                                    "null",
+                                    {
+                                      "type": "record",
+                                      "name": "NAD_12",
+                                      "fields": [
+                                        {
+                                          "name": "Name",
+                                          "type": "string"
+                                        },
+                                        {
+                                          "name": "ProfileName",
+                                          "type": [
+                                            "null",
+                                            "string"
+                                          ],
+                                          "default": null
+                                        },
+                                        {
+                                          "name": "ModelName",
+                                          "type": [
+                                            "null",
+                                            "string"
+                                          ],
+                                          "default": null
+                                        },
+                                        {
+                                          "name": "SwVersion",
+                                          "type": [
+                                            "null",
+                                            "string"
+                                          ],
+                                          "default": null
+                                        },
+                                        {
+                                          "name": "ProfileID",
+                                          "type": [
+                                            "null",
+                                            "string"
+                                          ],
+                                          "default": null
+                                        },
+                                        {
+                                          "name": "Description",
+                                          "type": [
+                                            "null",
+                                            "string"
+                                          ],
+                                          "default": null
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "array",
+                                      "name": "NAD_13",
+                                      "items": [
+                                        "null",
+                                        "NAD_12"
+                                      ]
+                                    }
+                                  ],
+                                  "default": null
+                                },
+                                {
+                                  "name": "NADProfileInfo",
+                                  "type": [
+                                    "null",
+                                    {
+                                      "type": "record",
+                                      "name": "NADProfileInfo_58",
+                                      "fields": [
+                                        {
+                                          "name": "Name",
+                                          "type": [
+                                            "null",
+                                            "string"
+                                          ],
+                                          "default": null
+                                        },
+                                        {
+                                          "name": "isCiscoProvided",
+                                          "type": "boolean"
+                                        },
+                                        {
+                                          "name": "isDefProfile",
+                                          "type": "boolean"
+                                        },
+                                        {
+                                          "name": "isRadiusSupported",
+                                          "type": "boolean"
+                                        },
+                                        {
+                                          "name": "isTacacsSupported",
+                                          "type": "boolean"
+                                        },
+                                        {
+                                          "name": "isTrustSecSupported",
+                                          "type": "boolean"
+                                        },
+                                        {
+                                          "name": "ActiveNADCount",
+                                          "type": [
+                                            "null",
+                                            "int"
+                                          ],
+                                          "default": null
+                                        },
+                                        {
+                                          "name": "Description",
+                                          "type": [
+                                            "null",
+                                            "string"
+                                          ],
+                                          "default": null
+                                        },
+                                        {
+                                          "name": "Id",
+                                          "type": [
+                                            "null",
+                                            "string"
+                                          ],
+                                          "default": null
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "NADProfileInfo_58R",
+                                      "type": "array",
+                                      "items": [
+                                        "null",
+                                        "NADProfileInfo_58"
+                                      ],
+                                      "default": null
+                                    }
+                                  ],
+                                  "default": null
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "name": "Scope",
+                            "type": "string"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "NADCountInfo",
+                      "type": [
+                        "null",
+                        {
+                          "type": "record",
+                          "name": "NADCountInfo_58",
+                          "fields": [
+                            {
+                              "name": "TotalActiveNADCount",
+                              "type": [
+                                "null",
+                                "int"
+                              ],
+                              "default": null
+                            }
+                          ],
+                          "default": null
+                        },
+                        {
+                          "name": "NADCountInfo_58R",
+                          "type": "array",
+                          "items": [
+                            "null",
+                            "NADCountInfo_58"
+                          ]
+                        }
+                      ],
+                      "default": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "NetworkAccessInfo",
+      "type": [
+        "null",
+        "string",
+        {
+          "type": "record",
+          "name": "NetworkAccessInfo_26",
+          "fields": [
+            {
+              "name": "NetworkAccessInfo",
+              "type": [
+                "null",
+                "string",
+                {
+                  "type": "record",
+                  "name": "NetworkAccessInfo_21",
+                  "fields": [
+                    {
+                      "name": "DeploymentID",
+                      "type": "string"
+                    },
+                    {
+                      "name": "NodeList",
+                      "type": {
+                        "type": "record",
+                        "name": "NodeList_51",
+                        "fields": [
+                          {
+                            "name": "Node",
+                            "type": [
+                              "null",
+                              {
+                                "type": "record",
+                                "name": "Node_90",
+                                "fields": [
+                                  {
+                                    "name": "LDAPInfo",
+                                    "type": [
+                                      "null",
+                                      {
+                                        "type": "record",
+                                        "name": "LDAPInfo_01",
+                                        "fields": [
+                                          {
+                                            "name": "LDAPName",
+                                            "type": "string"
+                                          },
+                                          {
+                                            "name": "SelectedAttrCount",
+                                            "type": "int"
+                                          },
+                                          {
+                                            "name": "SelectedGroupCount",
+                                            "type": "int"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "name": "LDAPInfo_01R",
+                                        "type": "array",
+                                        "items": [
+                                          "null",
+                                          "LDAPInfo_01"
+                                        ]
+                                      }
+                                    ],
+                                    "default": null
+                                  },
+                                  {
+                                    "name": "NDGInfo",
+                                    "type": [
+                                      "null",
+                                      {
+                                        "type": "record",
+                                        "name": "NDGInfo_01",
+                                        "fields": [
+                                          {
+                                            "name": "NDGHeierarchyNADMap",
+                                            "type": [
+                                              "null",
+                                              "string"
+                                            ]
+                                          },
+                                          {
+                                            "name": "NDGHierarchyMap",
+                                            "type": "string"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "name": "NDGInfo_01R",
+                                        "type": "array",
+                                        "items": [
+                                          "null",
+                                          "NDGInfo_01"
+                                        ]
+                                      }
+                                    ],
+                                    "default": null
+                                  },
+                                  {
+                                    "name": "ADInfo",
+                                    "type": [
+                                      "null",
+                                      {
+                                        "type": "record",
+                                        "name": "ADInfo_01",
+                                        "fields": [
+                                          {
+                                            "name": "ADName",
+                                            "type": "string"
+                                          },
+                                          {
+                                            "name": "SelectedAttrCount",
+                                            "type": "int"
+                                          },
+                                          {
+                                            "name": "SelectedAuthDomainCount",
+                                            "type": "int"
+                                          },
+                                          {
+                                            "name": "SelectedGroupCount",
+                                            "type": "int"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "name": "ADInfo_01R",
+                                        "type": "array",
+                                        "items": [
+                                          "null",
+                                          "ADInfo_01"
+                                        ]
+                                      }
+                                    ],
+                                    "default": null
+                                  },
+                                  {
+                                    "name": "AuthenticationInfo",
+                                    "type": [
+                                      "null",
+                                      {
+                                        "type": "record",
+                                        "name": "AuthenticationInfo_30",
+                                        "fields": [
+                                          {
+                                            "name": "ADAuthStoreCount",
+                                            "type": "int"
+                                          },
+                                          {
+                                            "name": "LDAPIDStoreCount",
+                                            "type": "int"
+                                          },
+                                          {
+                                            "name": "LocalIdentityNonAdminUserCount",
+                                            "type": "int"
+                                          },
+                                          {
+                                            "name": "ODBCCount",
+                                            "type": [
+                                              "null",
+                                              "int"
+                                            ],
+                                            "default": null
+                                          },
+                                          {
+                                            "name": "PolicyLineCount",
+                                            "type": "int"
+                                          },
+                                          {
+                                            "name": "RADIUSIDStoreCount",
+                                            "type": "int"
+                                          },
+                                          {
+                                            "name": "RSAIDStoreCount",
+                                            "type": "int"
+                                          },
+                                          {
+                                            "name": "OdbcInfo",
+                                            "type": [
+                                              "null",
+                                              "string",
+                                              {
+                                                "type": "record",
+                                                "name": "OdbcInfo_28",
+                                                "fields": [
+                                                  {
+                                                    "name": "ODBCCount",
+                                                    "type": [
+                                                      "null",
+                                                      "int"
+                                                    ],
+                                                    "default": null
+                                                  },
+                                                  {
+                                                    "name": "ODBCType",
+                                                    "type": [
+                                                      "null",
+                                                      {
+                                                        "type": "record",
+                                                        "name": "ODBCType_77",
+                                                        "fields": [
+                                                          {
+                                                            "name": "value",
+                                                            "type": "string"
+                                                          },
+                                                          {
+                                                            "name": "InputParametersCount",
+                                                            "type": "int"
+                                                          },
+                                                          {
+                                                            "name": "InputParameterName",
+                                                            "type": [
+                                                              "null",
+                                                              {
+                                                                "type": "record",
+                                                                "name": "InputParameterName_78",
+                                                                "fields": [
+                                                                  {
+                                                                    "name": "value",
+                                                                    "type": "string"
+                                                                  }
+                                                                ]
+                                                              },
+                                                              {
+                                                                "name": "InputParameterName_78R",
+                                                                "type": "array",
+                                                                "items": [
+                                                                  "null",
+                                                                  "InputParameterName_78"
+                                                                ]
+                                                              }
+                                                            ],
+                                                            "default": null
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "name": "ODBCType_77R",
+                                                        "type": "array",
+                                                        "items": [
+                                                          "null",
+                                                          "ODBCType_77"
+                                                        ]
+                                                      }
+                                                    ],
+                                                    "default": null
+                                                  }
+                                                ],
+                                                "default": null
+                                              }
+                                            ],
+                                            "default": null
+                                          }
+                                        ]
+                                      }
+                                    ],
+                                    "default": null
+                                  },
+                                  {
+                                    "name": "AuthorizationInfo",
+                                    "type": [
+                                      "null",
+                                      {
+                                        "type": "record",
+                                        "name": "AuthorizationInfo_20",
+                                        "fields": [
+                                          {
+                                            "name": "ActiveVLANCount",
+                                            "type": "int"
+                                          },
+                                          {
+                                            "name": "ActivedACLCount",
+                                            "type": "int"
+                                          },
+                                          {
+                                            "name": "PolicyLineCount",
+                                            "type": "int"
+                                          }
+                                        ]
+                                      }
+                                    ],
+                                    "default": null
+                                  }
+                                ]
+                              }
+                            ],
+                            "default": null
+                          },
+                          {
+                            "name": "Scope",
+                            "type": "string"
+                          },
+                          {
+                            "name": "SdaVNs",
+                            "type": [
+                              "null",
+                              {
+                                "type": "record",
+                                "name": "SdaVNs_58",
+                                "fields": [
+                                  {
+                                    "name": "Name",
+                                    "type": "string"
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "SdaVNs_58R",
+                                "type": "array",
+                                "items": [
+                                  "null",
+                                  "SdaVNs_58"
+                                ]
+                              }
+                            ],
+                            "default": null
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ],
+              "default": null
+            }
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "MDMInfo",
+      "type": [
+        "null",
+        "string",
+        {
+          "type": "record",
+          "name": "MDMInfo_26",
+          "fields": [
+            {
+              "name": "MDMInfo",
+              "type": [
+                "null",
+                "string",
+                {
+                  "type": "record",
+                  "name": "MDMInfo_21",
+                  "fields": [
+                    {
+                      "name": "DeploymentID",
+                      "type": "string"
+                    },
+                    {
+                      "name": "NodeList",
+                      "type": {
+                        "type": "record",
+                        "name": "NodeList_21",
+                        "fields": [
+                          {
+                            "name": "Node",
+                            "type": [
+                              "null",
+                              "string",
+                              {
+                                "type": "record",
+                                "name": "Node_5",
+                                "fields": [
+                                  {
+                                    "name": "Servers",
+                                    "type": [
+                                      "null",
+                                      {
+                                        "type": "record",
+                                        "name": "Servers_8",
+                                        "fields": [
+                                          {
+                                            "name": "Name",
+                                            "type": [
+                                              "null",
+                                              "string"
+                                            ],
+                                            "default": null
+                                          },
+                                          {
+                                            "name": "HostName",
+                                            "type": [
+                                              "null",
+                                              "string"
+                                            ],
+                                            "default": null
+                                          },
+                                          {
+                                            "name": "IPAddress",
+                                            "type": [
+                                              "null",
+                                              "string"
+                                            ],
+                                            "default": null
+                                          },
+                                          {
+                                            "name": "ServerType",
+                                            "type": [
+                                              "null",
+                                              "string"
+                                            ],
+                                            "default": null
+                                          },
+                                          {
+                                            "name": "VendorName",
+                                            "type": [
+                                              "null",
+                                              "string"
+                                            ],
+                                            "default": null
+                                          },
+                                          {
+                                            "name": "VendorProductName",
+                                            "type": [
+                                              "null",
+                                              "string"
+                                            ],
+                                            "default": null
+                                          },
+                                          {
+                                            "name": "VendorProductVersion",
+                                            "type": [
+                                              "null",
+                                              "string"
+                                            ],
+                                            "default": null
+                                          },
+                                          {
+                                            "name": "VendorApiVersion",
+                                            "type": [
+                                              "null",
+                                              "string"
+                                            ],
+                                            "default": null
+                                          },
+                                          {
+                                            "name": "ImportedBaselinesCount",
+                                            "type": [
+                                              "null",
+                                              "string"
+                                            ],
+                                            "default": null
+                                          },
+                                          {
+                                            "name": "SelectedBaselinesCount",
+                                            "type": [
+                                              "null",
+                                              "string"
+                                            ],
+                                            "default": null
+                                          },
+                                          {
+                                            "name": "DeviceIdentifierConfigurations",
+                                            "type": [
+                                              "null",
+                                              "string"
+                                            ],
+                                            "default": null
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "name": "Servers_8R",
+                                        "type": "array",
+                                        "items": [
+                                          "null",
+                                          "Servers_8"
+                                        ]
+                                      }
+                                    ],
+                                    "default": null
+                                  }
+                                ]
+                              }
+                            ],
+                            "default": null
+                          },
+                          {
+                            "name": "Scope",
+                            "type": "string"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "DesktopMdmServerCount",
+                      "type": [
+                        "null",
+                        "int"
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "Compliant",
+                      "type": [
+                        "null",
+                        "long"
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "NonCompliant",
+                      "type": [
+                        "null",
+                        "long"
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "ActiveMdmServersCount",
+                      "type": [
+                        "null",
+                        "string"
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "ActiveDesktopMdmServersCount",
+                      "type": [
+                        "null",
+                        "string"
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "ActiveMobileMdmServersCount",
+                      "type": [
+                        "null",
+                        "string"
+                      ],
+                      "default": null
+                    }
+                  ],
+                  "default": null
+                }
+              ],
+              "default": null
+            }
+          ],
+          "default": null
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "PeakCountsInfo",
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "PeakCountsInfo_44",
+          "fields": [
+            {
+              "name": "PeakCountsInfo",
+              "type": [
+                "null",
+                {
+                  "type": "record",
+                  "name": "PeakCountsInfo_30",
+                  "fields": [
+                    {
+                      "name": "PeakCount",
+                      "type": [
+                        "null",
+                        {
+                          "type": "record",
+                          "name": "PeakCount_58",
+                          "fields": [
+                            {
+                              "name": "attribute",
+                              "type": "string"
+                            },
+                            {
+                              "name": "value",
+                              "type": "int"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "PeakCount_58R",
+                          "type": "array",
+                          "items": [
+                            "null",
+                            "PeakCount_58"
+                          ]
+                        }
+                      ],
+                      "default": null
+                    }
+                  ]
+                }
+              ],
+              "default": null
+            }
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "PostureInfo",
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "PostureInfo_26",
+          "fields": [
+            {
+              "name": "PostureInfo",
+              "type": [
+                "null",
+                {
+                  "type": "record",
+                  "name": "PostureInfo_21",
+                  "fields": [
+                    {
+                      "name": "ActivePoliciesCount",
+                      "type": "int"
+                    },
+                    {
+                      "name": "InActivePoliciesCount",
+                      "type": "int"
+                    },
+                    {
+                      "name": "LastPostureFeedUpdateTimeStamp",
+                      "type": "string"
+                    },
+                    {
+                      "name": "PostureFeedUpdateMode",
+                      "type": [
+                        "null",
+                        "string"
+                      ],
+                      "default": null
+                    }
+                  ]
+                }
+              ],
+              "default": null
+            }
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "ProfilerInfo",
+      "type": [
+        "null",
+        "string",
+        {
+          "type": "record",
+          "name": "ProfilerInfo_15",
+          "fields": [
+            {
+              "name": "ProfilerInfo",
+              "type": [
+                "null",
+                "string",
+                {
+                  "type": "record",
+                  "name": "ProfilerInfo_36",
+                  "fields": [
+                    {
+                      "name": "DeploymentID",
+                      "type": "string"
+                    },
+                    {
+                      "name": "NodeList",
+                      "type": {
+                        "type": "record",
+                        "name": "NodeList_46",
+                        "fields": [
+                          {
+                            "name": "Node",
+                            "type": {
+                              "type": "record",
+                              "name": "Node_73",
+                              "fields": [
+                                {
+                                  "name": "Profiles",
+                                  "type": {
+                                    "type": "record",
+                                    "name": "Profiles_29",
+                                    "fields": [
+                                      {
+                                        "name": "CustomProfilesCount",
+                                        "type": "int"
+                                      },
+                                      {
+                                        "name": "EndpointTypes",
+                                        "type": "string"
+                                      },
+                                      {
+                                        "name": "TotalProfilesCount",
+                                        "type": "int"
+                                      },
+                                      {
+                                        "name": "UniqueEndpointsCount",
+                                        "type": "int"
+                                      },
+                                      {
+                                        "name": "UnknownEndpointsCount",
+                                        "type": "int"
+                                      },
+                                      {
+                                        "name": "UnknownEndpointsPercentage",
+                                        "type": "int"
+                                      },
+                                      {
+                                        "name": "TotalEndpointsCount",
+                                        "type": "int"
+                                      },
+                                      {
+                                        "name": "Profile",
+                                        "type": [
+                                          "null",
+                                          {
+                                            "type": "record",
+                                            "name": "Profile_01",
+                                            "fields": [
+                                              {
+                                                "name": "custom",
+                                                "type": "boolean"
+                                              },
+                                              {
+                                                "name": "EndpointCount",
+                                                "type": "int"
+                                              },
+                                              {
+                                                "name": "Name",
+                                                "type": "string"
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "name": "Profile_01R",
+                                            "type": "array",
+                                            "items": [
+                                              "null",
+                                              "Profile_01"
+                                            ]
+                                          }
+                                        ],
+                                        "default": null
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "name": "Scope",
+                                  "type": "string"
+                                },
+                                {
+                                  "name": "LastAppliedFeedDateTime",
+                                  "type": [
+                                    "null",
+                                    "string"
+                                  ],
+                                  "default": null
+                                },
+                                {
+                                  "name": "OnlineSubscriptionEnabled",
+                                  "type": [
+                                    "null",
+                                    "boolean"
+                                  ],
+                                  "default": null
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "default": null
+                }
+              ],
+              "default": null
+            }
+          ],
+          "default": null
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "HTTPTrustsecInfo",
+      "type": [
+        "null",
+        "string",
+        {
+          "type": "record",
+          "name": "HTTPTrustsecInfo_26",
+          "fields": [
+            {
+              "name": "HTTPTrustsecInfo",
+              "type": [
+                "null",
+                "string",
+                {
+                  "type": "record",
+                  "name": "HTTPTrustsecInfo_21",
+                  "fields": [
+                    {
+                      "name": "Propagations",
+                      "type": [
+                        "null",
+                        "string",
+                        {
+                          "type": "record",
+                          "name": "Propagations_5",
+                          "fields": [
+                            {
+                              "name": "Propagation",
+                              "type": [
+                                "null",
+                                {
+                                  "type": "record",
+                                  "name": "Propagation_8",
+                                  "fields": [
+                                    {
+                                      "name": "PropagationId",
+                                      "type": "int"
+                                    },
+                                    {
+                                      "name": "TimeTakenInMs",
+                                      "type": "int"
+                                    },
+                                    {
+                                      "name": "SuccessRatePercentage",
+                                      "type": "int"
+                                    },
+                                    {
+                                      "name": "StartTime",
+                                      "type": "string"
+                                    },
+                                    {
+                                      "name": "EndTime",
+                                      "type": "string"
+                                    },
+                                    {
+                                      "name": "COAs",
+                                      "type": [
+                                        "null",
+                                        "string",
+                                        {
+                                          "type": "record",
+                                          "name": "COAs_5",
+                                          "fields": [
+                                            {
+                                              "name": "Push",
+                                              "type": [
+                                                "null",
+                                                {
+                                                  "type": "record",
+                                                  "name": "Push_8",
+                                                  "fields": [
+                                                    {
+                                                      "name": "PushId",
+                                                      "type": "long"
+                                                    },
+                                                    {
+                                                      "name": "NumOfNads",
+                                                      "type": "int"
+                                                    },
+                                                    {
+                                                      "name": "NumOfSucceededNads",
+                                                      "type": "int"
+                                                    },
+                                                    {
+                                                      "name": "NumOfFailedNads",
+                                                      "type": "int"
+                                                    }
+                                                  ],
+                                                  "default": null
+                                                },
+                                                {
+                                                  "name": "Push_8R",
+                                                  "type": "array",
+                                                  "items": [
+                                                    "null",
+                                                    "Push_8"
+                                                  ]
+                                                }
+                                              ],
+                                              "default": null
+                                            }
+                                          ],
+                                          "default": null
+                                        }
+                                      ],
+                                      "default": null
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "Propagation_8R",
+                                  "type": "array",
+                                  "items": [
+                                    "null",
+                                    "Propagation_8"
+                                  ]
+                                }
+                              ],
+                              "default": null
+                            }
+                          ],
+                          "default": null
+                        }
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "AvgSuccessRate",
+                      "type": "float"
+                    },
+                    {
+                      "name": "AvgTimeTakenInMs",
+                      "type": "float"
+                    }
+                  ],
+                  "default": null
+                }
+              ],
+              "default": null
+            }
+          ],
+          "default": null
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "UpgradePreChecksInfo",
+      "type": [
+        "null","string",
+        {
+          "type": "record",
+          "name": "UpgradePreChecksInfo_62",
+          "fields": [
+            {
+              "name": "UpgradePreChecksReports",
+              "type": [
+                "null","string",
+                {
+                  "type": "record",
+                  "name": "UpgradePreChecksReports_31",
+                  "fields": [
+                    {
+                      "name": "PrecheckRpt",
+                      "type": [
+                        "null",
+                        {
+                          "type": "record",
+                          "name": "PrecheckRpt_12",
+                          "fields": [
+                            {
+                              "name": "PrecheckName",
+                              "type": [
+                                "null",
+                                {
+                                  "type": "record",
+                                  "name": "PrecheckName_21",
+                                  "fields": [
+                                    {
+                                      "name": "value",
+                                      "type": [
+                                        "null",
+                                        "string"
+                                      ],
+                                      "default": null
+                                    },
+                                    {
+                                      "name": "Nodes",
+                                      "type": [
+                                        "null",
+                                        {
+                                          "type": "record",
+                                          "name": "Nodes_78",
+                                          "fields": [
+                                            {
+                                              "name": "NodeName",
+                                              "type": [
+                                                "null",
+                                                "string"
+                                              ],
+                                              "default": null
+                                            },
+                                            {
+                                              "name": "NodeStatus",
+                                              "type": [
+                                                "null",
+                                                "string"
+                                              ],
+                                              "default": null
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "name": "Nodes_78R",
+                                          "type": "array",
+                                          "items": [
+                                            "Nodes_78"
+                                          ]
+                                        }
+                                      ],
+                                      "default": null
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "PrecheckName_21R",
+                                  "type": "array",
+                                  "items": [
+                                    "PrecheckName_21"
+                                  ]
+                                }
+                              ],
+                              "default": null
+                            }
+                          ]
+                        },
+                        {
+                          "name": "PrecheckRpt_12R",
+                          "type": "array",
+                          "items": [
+                            "PrecheckRpt_12"
+                          ]
+                        }
+                      ],
+                      "default": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
