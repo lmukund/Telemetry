@@ -68,6 +68,8 @@ def uploadData():
     log=j['fields']
     count=0
     for row in log:
+        if 'name' not in row:
+            break
         if row['name']=="message_dispatched" or row['name']=="payload":
             count+=1
         for row in log:
