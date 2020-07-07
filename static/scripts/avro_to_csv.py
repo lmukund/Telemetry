@@ -5,9 +5,9 @@ import io
 import pandas as pd
 import urllib.request
 import json
+import copy
 #%%
-# # splunk command : host="check"| stats values as * by name
-
+#  splunk command : host="check"| stats values as * by name
 def send_event(splunk_host, auth_token, log_data,hostid):
    
    try:
@@ -54,7 +54,8 @@ def send_event(splunk_host, auth_token, log_data,hostid):
    return post_success
 #%%
 def main(log_data,hostid):
-   splunk_auth_token = "6897dad5-11a8-420a-a63a-ac8d1b6ed019"
+   #splunk_auth_token = "6897dad5-11a8-420a-a63a-ac8d1b6ed019"
+   splunk_auth_token = "c6b48f4a-b178-4387-aea4-b7f1c224424e"
    splunk_host = "localhost"   
    result = send_event(splunk_host, splunk_auth_token, log_data,hostid)
    print (result)
@@ -65,6 +66,29 @@ def uploadData():
     f=open(file)
     j=json.load(f)
     log=j['fields']
+    count=0
+    for row in log:
+        if row['name']=="message_dispatched" or row['name']=="payload":
+            count+=1
+        for row in log:
+            if row['name']=="payload":
+                data=copy.deepcopy(row);
+                break;
+    if count==2:
+        for row in log:
+            if row['name']=="payload":
+                data=copy.deepcopy(row);
+                break;        
+        data=data['type']
+        data=data['fields']  
+        for row in data:
+            if row['name']=='payload':
+                data=row
+                break
+        data=data['type']
+        data=data['fields']
+        log=data
+
     hostid=input("Assign host_id : \n")
     main(log,hostid)
     return
@@ -73,7 +97,7 @@ def getData():
     user=input("enter splunk username : \n ")
     passwd=input("enter splunk password : \n")
     hostname=input("enter hostname (for local splunk enterprise type localhost) : \n")
-    search_host=input("Enter host_id previously entered for search : \n")
+    search_host=input("Enter host_id for search : \n")
     search_host="\""+search_host+"\""
     print("WARNING !! if using local splunk enterprise then set truncate=0 in props.conf file \n")
     service = client.connect(
@@ -108,8 +132,6 @@ def getData():
 uploadData()
 print("Data Uploaded !!")
 getData()
-print("Data Fetched !!")
-
 #%%
 
 
