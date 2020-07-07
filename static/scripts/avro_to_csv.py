@@ -7,10 +7,7 @@ import urllib.request
 import json
 #%%
 # # splunk command : host="check"| stats values as * by name
-# token : 6897dad5-11a8-420a-a63a-ac8d1b6ed019
-# cloud token : c6b48f4a-b178-4387-aea4-b7f1c224424e
-# cloud id : sc_admin , password: d45x3b1x0409ro8j
-# prd-p-re1s8.splunkcloud.com/
+
 def send_event(splunk_host, auth_token, log_data,hostid):
    
    try:
@@ -58,7 +55,6 @@ def send_event(splunk_host, auth_token, log_data,hostid):
 #%%
 def main(log_data,hostid):
    splunk_auth_token = "6897dad5-11a8-420a-a63a-ac8d1b6ed019"
-   #splunk_auth_token = "c6b48f4a-b178-4387-aea4-b7f1c224424e"
    splunk_host = "localhost"   
    result = send_event(splunk_host, splunk_auth_token, log_data,hostid)
    print (result)
