@@ -19,7 +19,7 @@ MarkupSafe==1.1.1
 numpy==1.18.5
 packaging==20.4
 pandas==1.0.4
-pipenv==2020.6.2
+pipenv==2022.1.8
 pluggy==0.13.1
 py==1.8.2
 pyparsing==2.4.7
